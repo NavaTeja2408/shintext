@@ -1,5 +1,5 @@
 const Conversation = require("../Models/conversationModel.js");
-const Message = require("../Models/MessageModel.js");
+const Message = require("../Models/messageModel.js");
 const AllConversations = require("../Models/allConversationModel.js");
 const User = require("../Models/userModel");
 
