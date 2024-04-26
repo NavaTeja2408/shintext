@@ -1,6 +1,6 @@
 const { uploadFilesToCloudninery } = require("../helpers/cloud");
 const User = require("../Models/userModel");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const AllConversations = require("../Models/allConversationModel.js");
 
