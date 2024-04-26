@@ -12,10 +12,6 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: false }));
 server.use(cookieParser());
 
-server.get("/", (req, res) => {
-  server.use(express.static(path.resolve(__dirname, "client", "build")));
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-});
 mongoose
   .connect(
     "mongodb+srv://teja:fKYySRiaCwbiHWWJ@all.rm1ycdv.mongodb.net/?retryWrites=true&w=majority&appName=all"
