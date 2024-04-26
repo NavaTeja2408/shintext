@@ -67,8 +67,6 @@ const signUp = async (req, res) => {
       { expiresIn: "24h" }
     );
 
-    res.cookie("token", acesstoken);
-
     const coversa = new AllConversations({
       sender_id: user._id,
       convo: [],
@@ -121,6 +119,7 @@ const login = async (req, res) => {
     res.cookie("token", acesstoken, {
       maxAge: 15 * 24 * 60 * 60 * 1000,
       httpOnly: true,
+      sameSite: "None",
     });
 
     temp = {
