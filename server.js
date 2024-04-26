@@ -14,7 +14,7 @@ server.use(cookieParser());
 
 server.get("/", (req, res) => {
   server.use(express.static(path.resolve(__dirname, "client", "build")));
-  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "client", "public", "index.html"));
 });
 mongoose
   .connect(
