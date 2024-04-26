@@ -15,7 +15,7 @@ const chatroute = express.Router();
 
 const corsoption = {
   credentials: true,
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "https://shin-text.vercel.app"],
   optionStatus: 200,
 };
 
