@@ -18,7 +18,7 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 router.post("/signup", upload.single("avatar"), signUp);
-router.get("/login", login);
+router.post("/login", login);
 router.get("/logout", logout);
 
 module.exports = router;
